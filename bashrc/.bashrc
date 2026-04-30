@@ -119,4 +119,4 @@ fi
 export PAGER="most"
 # export PAGER="less --use-color"
 
-
+alias stow="stow --dir=$HOME/Documents/dotfiles --target=$HOME"
