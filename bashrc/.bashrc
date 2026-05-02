@@ -116,13 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias stow="stow --dir=$HOME/Documents/dotfiles --target=$HOME"
-
 eval "$(starship init bash)"
 
 alias vim="nvim"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
-
-# fastfetch
-
