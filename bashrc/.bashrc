@@ -137,3 +137,6 @@ alias gcad='git commit -a --amend'
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
 
+export MANROFFOPT="-c"
+export MANPAGER="most"
+
