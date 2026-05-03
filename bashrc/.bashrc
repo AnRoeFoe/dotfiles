@@ -118,4 +118,20 @@ fi
 
 eval "$(starship init bash)"
 
+# File system
+alias lsa='ls -a'
+
+# Directories
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Tools
+alias g='git'
 alias vim="nvim"
+
+# Git
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gcad='git commit -a --amend'
+
