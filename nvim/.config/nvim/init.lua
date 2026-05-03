@@ -25,9 +25,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Plugins
-require("lazy").setup({ -- Color scheme
-{"folke/tokyonight.nvim"}, -- File explorer
-{"nvim-tree/nvim-tree.lua"}, -- Status line
+require("lazy").setup({
+{"nvim-tree/nvim-tree.lua"},
 {"nvim-lualine/lualine.nvim"}, {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -41,9 +40,6 @@ require("lazy").setup({ -- Color scheme
     lazy = false,
     build = ':TSUpdate'
 }})
-
--- Enable colorscheme
--- vim.cmd("colorscheme tokyonight")
 
 -- Setup plugins
 require("nvim-tree").setup()
