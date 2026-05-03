@@ -118,9 +118,22 @@ fi
 
 eval "$(starship init bash)"
 
+# File system
+alias lsa='ls -a'
+
+# Directories
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# Tools
+alias g='git'
 alias vim="nvim"
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
+# Git
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gcad='git commit -a --amend'
 
-# fastfetch
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
 
