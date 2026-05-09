@@ -11,7 +11,10 @@ vim.opt.termguicolors = true  -- Enable 24-bit RGB colors
 
 -- Set Leader Key
 vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
--- Quick Keymaps
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex) -- Open file explorer
+require("keymappings")
+require("plugins")
+
+vim.cmd.colorscheme "catppuccin"
 
