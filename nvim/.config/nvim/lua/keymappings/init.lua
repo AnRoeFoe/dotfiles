@@ -1,4 +1,4 @@
---{ theme = 'gruvbox' })
+--
 -- Basic keymaps
 --
 vim.keymap.set("n", "<leader>w", ":w<CR>") -- save
