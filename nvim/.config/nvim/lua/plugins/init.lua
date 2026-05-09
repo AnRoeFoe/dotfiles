@@ -19,7 +19,12 @@ require("lazy").setup(
     {
         {"nvim-lualine/lualine.nvim"},
         {"numToStr/Comment.nvim"},
-        { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+        { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+        {
+  'nvim-treesitter/nvim-treesitter',
+  lazy = false,
+  build = ':TSUpdate'
+}
     }
 )
 
