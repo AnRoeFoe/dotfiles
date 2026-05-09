@@ -30,5 +30,3 @@ require("lazy").setup(
 
 require("lualine").setup()
 
-vim.cmd.colorscheme "catppuccin-nvim"
-
