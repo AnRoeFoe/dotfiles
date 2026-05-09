@@ -21,3 +21,5 @@ require("lazy").setup(
     }
 )
 
+require("lualine").setup()
+
