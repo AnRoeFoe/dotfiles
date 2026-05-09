@@ -18,7 +18,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup(
     {
         {"nvim-lualine/lualine.nvim"},
-        {"numToStr/Comment.nvim"},
         { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
         {
             'nvim-treesitter/nvim-treesitter',
