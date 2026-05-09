@@ -29,6 +29,17 @@ require("lazy").setup(
             },
         },
         {
+            "nvim-tree/nvim-tree.lua",
+            version = "*",
+            lazy = false,
+            dependencies = {
+                "nvim-tree/nvim-web-devicons",
+            },
+            config = function()
+                require("nvim-tree").setup {}
+            end,
+        },
+        {
             "https://github.com/windwp/nvim-autopairs",
             event = "InsertEnter", -- Only load when you enter Insert mode
             config = function()
