@@ -11,6 +11,8 @@ vim.opt.ignorecase = true     -- Ignore case in search patterns
 vim.opt.smartcase = true      -- Override ignorecase if search has capitals
 vim.opt.termguicolors = true  -- Enable 24-bit RGB colors
 
+vim.opt.undofile = true
+
 -- Set Leader Key
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "

@@ -17,6 +17,31 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup(
     {
+        {
+            "https://github.com/junegunn/fzf.vim",
+            dependencies = {
+                "https://github.com/junegunn/fzf",
+            },
+            keys = {
+                { "<Leader><Leader>", "<Cmd>Files<CR>", desc = "Find files" },
+                { "<Leader>,", "<Cmd>Buffers<CR>", desc = "Find buffers" },
+                { "<Leader>/", "<Cmd>Rg<CR>", desc = "Search project" },
+            },
+        },
+        {
+            "https://github.com/windwp/nvim-autopairs",
+            event = "InsertEnter", -- Only load when you enter Insert mode
+            config = function()
+                require("nvim-autopairs").setup()
+            end,
+        },
+        {
+            "https://github.com/numToStr/Comment.nvim",
+            event = "VeryLazy", -- Special lazy.nvim event for things that can load later and are not important for the initial UI
+            config = function()
+                require("Comment").setup()
+            end,
+        },
         {"nvim-lualine/lualine.nvim"},
         { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
         {
