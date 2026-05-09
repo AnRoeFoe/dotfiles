@@ -17,9 +17,13 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup(
     {
-        {"nvim-lualine/lualine.nvim"}
+        {"nvim-lualine/lualine.nvim"},
+        {"numToStr/Comment.nvim"},
+        { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
     }
 )
 
 require("lualine").setup()
+
+vim.cmd.colorscheme "catppuccin-nvim"
 
