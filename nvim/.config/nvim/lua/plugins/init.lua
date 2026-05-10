@@ -17,6 +17,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup(
     {
+        --
+        -- Fuzzy Finder
+        --
         {
             "https://github.com/junegunn/fzf.vim",
             dependencies = {
@@ -28,6 +31,27 @@ require("lazy").setup(
                 { "<Leader>/", "<Cmd>Rg<CR>", desc = "Search project" },
             },
         },
+        {
+            "folke/which-key.nvim",
+            event = "VeryLazy",
+            opts = {
+                -- your configuration comes here
+                -- or leave it empty to use the default settings
+                -- refer to the configuration section below
+            },
+            keys = {
+                {
+                    "<leader>s",
+                    function()
+                        require("which-key").show({ global = false })
+                    end,
+                    desc = "Buffer Local Keymaps (which-key)",
+                },
+            },
+        },
+        --
+        -- File manager
+        --
         {
             "nvim-tree/nvim-tree.lua",
             version = "*",
