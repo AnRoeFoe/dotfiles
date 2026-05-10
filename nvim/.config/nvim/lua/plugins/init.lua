@@ -31,6 +31,9 @@ require("lazy").setup(
                 { "<Leader>/", "<Cmd>Rg<CR>", desc = "Search project" },
             },
         },
+        --
+        --
+        --
         {
             "folke/which-key.nvim",
             event = "VeryLazy",
@@ -63,6 +66,9 @@ require("lazy").setup(
                 require("nvim-tree").setup {}
             end,
         },
+        --
+        --
+        --
         {
             "https://github.com/windwp/nvim-autopairs",
             event = "InsertEnter", -- Only load when you enter Insert mode
@@ -70,6 +76,9 @@ require("lazy").setup(
                 require("nvim-autopairs").setup()
             end,
         },
+        --
+        --
+        --
         {
             "https://github.com/numToStr/Comment.nvim",
             event = "VeryLazy", -- Special lazy.nvim event for things that can load later and are not important for the initial UI
@@ -77,8 +86,17 @@ require("lazy").setup(
                 require("Comment").setup()
             end,
         },
+        --
+        -- status line
+        --
         {"nvim-lualine/lualine.nvim"},
+        --
+        -- color scheme
+        --
         { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+        --
+        --
+        --
         {
             'nvim-treesitter/nvim-treesitter',
             lazy = false,
